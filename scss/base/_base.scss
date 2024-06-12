@@ -1,7 +1,14 @@
+// common dung chung
 *,
 ::before,
 ::after {
   box-sizing: border-box;
+}
+:root {
+  --text-color: #1a162e;
+
+  --icon-color: brightness(0) saturate(100%) invert(10%) sepia(14%)
+    saturate(2227%) hue-rotate(210deg) brightness(92%) contrast(99%);
 }
 html {
   font-size: 62.5%;
@@ -9,4 +16,24 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Gordita, sans-serif;
+  color: var(--text-color);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.icon {
+  filter: var(--icon-color);
+}
+button,
+input,
+textarea,
+section {
+  font-family: inherit;
+  color: inherit;
 }
